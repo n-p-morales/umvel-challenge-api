@@ -1,0 +1,39 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Aggregates\" />
+    <Folder Include="Models\" />
+    <Folder Include="Models\Customers\" />
+    <Folder Include="Models\Sales\" />
+    <Folder Include="Models\Products\" />
+    <Folder Include="Models\Concepts\" />
+    <Folder Include="Commons\Rules\" />
+    <Folder Include="Commons\Rules\Exceptions\" />
+    <Folder Include="Entities\Customers\Rules\" />
+    <Folder Include="Entities\Products\Rules\" />
+    <Folder Include="Entities\Sales\Rule\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="5.0.10" />
+    <PackageReference Include="Microsoft.Extensions.Configuration.Abstractions" Version="5.0.0" />
+    <PackageReference Include="Microsoft.Extensions.DependencyInjection" Version="7.0.0" />
+    <PackageReference Include="Microsoft.Extensions.Options.ConfigurationExtensions" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Models\Customers\" />
+    <None Remove="Models\Sales\" />
+    <None Remove="Models\Products\" />
+    <None Remove="Models\Concepts\" />
+    <None Remove="Commons\Rules\" />
+    <None Remove="Commons\Rules\Exceptions\" />
+    <None Remove="Entities\Customers\Rules\" />
+    <None Remove="Entities\Products\Rules\" />
+    <None Remove="Entities\Sales\Rule\" />
+  </ItemGroup>
+</Project>

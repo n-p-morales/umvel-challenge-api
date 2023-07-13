@@ -1,0 +1,37 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net5.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Commands\" />
+    <Folder Include="Models\" />
+    <Folder Include="Queries\" />
+    <Folder Include="Exceptions\" />
+    <Folder Include="Queries\Customer\" />
+    <Folder Include="Commands\Customers\" />
+    <Folder Include="Queries\Product\" />
+    <Folder Include="Commands\Products\" />
+    <Folder Include="Commands\Sales\" />
+    <Folder Include="Queries\Sale\" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="9.0.0" />
+    <PackageReference Include="FluentValidation" Version="10.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Remove="Exceptions\" />
+    <None Remove="Queries\Customer\" />
+    <None Remove="Commands\Customers\" />
+    <None Remove="Queries\Product\" />
+    <None Remove="Commands\Products\" />
+    <None Remove="Commands\Sales\" />
+    <None Remove="Queries\Sale\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\umvel.challenge.domain\umvel.challenge.domain.csproj" />
+  </ItemGroup>
+</Project>
