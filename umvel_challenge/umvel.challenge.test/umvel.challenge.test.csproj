@@ -17,6 +17,26 @@
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
       <PrivateAssets>all</PrivateAssets>
     </PackageReference>
+    <PackageReference Include="Moq" Version="4.18.4" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Remove="Application\" />
+    <None Remove="Domain\" />
+    <None Remove="Application\Sales\" />
+    <None Remove="Application\Customers\" />
+    <None Remove="Application\Products\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Application\" />
+    <Folder Include="Domain\" />
+    <Folder Include="Application\Sales\" />
+    <Folder Include="Application\Customers\" />
+    <Folder Include="Application\Products\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\umvel.challenge.application\umvel.challenge.application.csproj" />
+    <ProjectReference Include="..\umvel.challenge.domain\umvel.challenge.domain.csproj" />
+    <ProjectReference Include="..\umvel.challenge.infraestructure\umvel.challenge.infraestructure.csproj" />
+  </ItemGroup>
 </Project>
